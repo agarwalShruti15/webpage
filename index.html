@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Shruti Agarwal</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+  </head>
+
+  <body>
+
+  <div class="container">
+    <div class="page-header">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <td  valign="top" align="left" width="15%">
+          <a href="img/IMG_1394.jpg">
+          <img src="img/IMG_1394_crop.jpg" border=0 height=180></a>
+        </td>
+        <td align="left">
+        <h1>Shruti Agarwal</h1>
+        <p style="text-align: left;">
+              <span style="font-family:georgia,serif;"><span style="font-size: 12pt;">PhD Candidate<br />
+              Department of Computer Science<br />
+              Dartmouth College<br />
+              <br />
+              Email: shruti [dot] agarwal [dot] gr [at] dartmouth [dot] edu </span></span></p>
+        </td>
+      </table>
+    </div>
+
+  <div style="color:#676767;font-family:Arial, Helvetica, sans-serif;font-size:9px;">
+  <p><h3>
+      <a href="#about"">About</a> | <a href="#pubs">Papers</a> | <a href="#research">Research</a> | <a href="#personal">Personal</a>
+    </h3>
+  </div>
+  <p><hr size="1" align="left" noshade><p>
+
+<p><a name="about"></a>I am a third year PhD student in the Department of Computer Science at Dartmouth College advised by <a href="http://www.cs.dartmouth.edu/farid/">Prof. Hany Farid</a>. I have previously worked as a software developer in the Adobe Illustrator team at Adobe, India. I received my master’s and bachelor’s degree in Computer Science from Indian Institute of Technology (IIT) Delhi, India and Harcourt Butler Technology Institute (HBTI), India. My primary research interest lies in multimedia forensics, image analysis, machine learning and computer vision.
+<p>
+  Here is a copy of my <a href="downloads/shruti-cv.pdf">CV</a>.
+</p>
+
+<h3><a name="pubs"></a>Papers</h3>
+  <ul>
+    <LI>
+      <b> "Rebroadcast Attacks: Defenses, Reattacks, and Redefenses", </b>
+      <BR>
+        W. Fan, S. Agarwal, and H. Farid,
+      <BR>
+      <em>European Signal Processing Conference (EUSIPCO), Rome, Italy, IEEE, 2018. (to appear)</em> <a href="downloads/eusipco18.pdf">(pdf)</a>
+    </LI><p>
+    <LI>
+      <b> "A Diverse Large-Scale Dataset for Evaluating Rebroadcast Attacks", </b>
+      <BR>
+        S. Agarwal, W. Fan, and H. Farid,
+      <BR>
+      <em>IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), Calgary, Alberta, Canada, 2018. </em> <a href="downloads/icassp18.pdf">(pdf)</a>
+    </LI><p>
+    <LI>
+      <b> "A JPEG Corner Artifact from Directed Rounding of DCT Coeffcients", </b>
+      <BR>
+        S. Agarwal and H. Farid,
+      <BR>
+      <em>TR2018-838, Department of Computer Science, Dartmouth College, 2018. </em> <a href="downloads/tr18.pdf">(pdf)</a>
+    </LI><p>
+    <LI>
+      <b> "Photo forensics from JPEG dimples", </b>
+      <BR>
+        S. Agarwal and H. Farid,
+      <BR>
+      <em>IEEE Workshop on Information Forensics and Security (WIFS), Rennes, 2017. </em> <a href="downloads/wifs17.pdf">(pdf)</a>
+    </LI><p>
+    <LI>
+      <b> "Deciphering Severely Degraded License Plates", </b>
+      <BR>
+        S. Agarwal, D. Tran, L. Torresani and H. Farid,
+      <BR>
+      <em>Electronic Imaging, Media Watermarking, Security, and Forensics, San Francisco, CA, 2017. </em> <a href="downloads/spie17.pdf">(pdf)</a>
+    </LI><p>
+  </ul> 
+
+  <h3><a name="research"></a>Research</h3>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <td  valign="top" align="left">
+          <a href="projects/wifs17.key">
+          <img src="projects/wifs17.jpg" border=0 height=180></a>
+        </td>
+        <td valign="top" align="left">
+          <ul>
+            <LI>
+              <b> JPEG Dimples:  </b> 
+              <BR>
+              Although the basic steps for JPEG encoding remain the same across different JPEG encoders, there are many aspects to this compression scheme that varies with the specific design and implementation choices made by an encoder. These variations can be exploited by forensic techniques to reveal traces of manipulation in digital images. One such aspect is the choice of the mathematical operator used to convert Discrete Cosine Transform (DCT) coefficients from floating-point to integer values. The use of directed rounding (ceiling or floor) for this purpose can lead to a periodic artifact in the form of a single darker or brighter pixel – which we term as JPEG dimples – in 8X8 pixel block of the JPEG images. An analysis of thousands of different camera models reveals a widespread prevalence of this artifact in real world JPEG images. Local manipulations like content-aware fill, re-sampling, compositing etc. in an image can disrupt the periodicity of this artifact in the altered region. We have shown that this local absence of dimples in an image can be exploited for the purpose of photo forensics to detect a wide range of digital manipulations.
+            </LI>
+          </ul>
+        </td>
+      <tr>
+        <td  valign="top" align="left">
+          <a href="projects/icassp18.key">
+          <img src="projects/icassp18.jpg" border=0 height=180></a>
+        </td>
+        <td valign="top" align="left">
+          <ul>
+            <LI>
+              <b> Rebroadcast Detection:  </b> 
+              <BR>
+              Many forensic techniques, including the one described above, look for clues of modifications in the camera properties of an original JPEG file. This assumption can, however, fail in the presence of a simple rebroadcast attack in which an image is manipulated and then re-imaged, thus preserving the underlying camera properties in the image. A rebroadcast image can be generated by: (1) photographing a printed copy of an image; (2) photographing a displayed image; (3) scanning a printed copy of an image; or (4) capturing a screen-grab of a displayed image. We have collected a large-scale dataset comprising all four types of rebroadcast images and evaluated the efficacy of three state-of-the-art techniques on our dataset. We also trained a deep convolutional neural network (CNN) to detect rebroadcast images and showed that our network significantly outperformed the previous state-of-the-art techniques for this task.
+            </LI>
+          </ul>
+        </td>
+      <tr>
+        <td  valign="top" align="left">
+          <a href="projects/spie17.key">
+          <img src="projects/spie17.jpg" border=0 height=180></a>
+        </td>
+        <td valign="top" align="left">
+          <ul>
+            <LI>
+              <b> Deciphering Severely Degraded License Plates:  </b> 
+              <BR>
+              License plate images obtained from surveillance cameras are often noisy and of low resolution images, on the order of 20 pixels in width. These low quality images appear with frustrating frequency in many forensic investigations. The inability of human observers to decipher such low quality images, brings forth the need for computational tools to perform this task. With the help of a large-scale simulation we first showed that useful distinctive information remains even in images of resolution as low as 1.9 pixels per character. We have trained a CNN to extract this information and recognized characters on degraded real-world license plate images. 
+            </LI>
+          </ul>
+        </td>
+    </table>
+
+
+ <h3><a name="personal"></a>Personal</h3>
+ <p>
+    I'm from Agra, India, the land of the Taj Mahal. When I'm not studying I love spending time cooking. My friends say I make delicious Aloo Paratha :D. Three years in New Hampshire have made me a little more adventurous. On weekends, I like to go for any outdoor activity such as hiking, biking, swimming, or just running in the neighborhood. 
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
